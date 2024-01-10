@@ -4,26 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DLew Portfolio</title>
-
-
+    <link rel="stylesheet" href="styles.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+    <script src="script.js"></script>
 </head>
 <body>
-    <div>
+    <nav id="desktop-nav">
+        <div class="logo">DLewTheDev</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#project">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <button>Resume</button>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">DLewTheDev</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about-me" onclick="toggleMenu()">About Me</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Darius Lewis profile-pic">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Darius Lewis</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button 
+                    class="btn btn-color-2" 
+                    onclick="window.open('./assets/resume-example.pdf')"
+                >
+                    Download CV
+                </button>
+
+                <button 
+                    class="btn btn-color-1" 
+                    onclick="location.href='./#contact'"
+                >
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img 
+                    src="./assets/linkedin.png" 
+                    alt="My LinkedIn Profile"
+                    class="icon" 
+                    onclick="location.href='https://linkedin.com/in/dariuslewis2/'"
+                />
+                <img 
+                    src="./assets/github.png" 
+                    alt="My GitHub Profile"
+                    class="icon" 
+                    onclick="location.href='https://github.com/DLew2024'"
+                />
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-conatiner">
+            <div class="section__pic-container">
+                <img 
+                    src="./assets/about-pic.png" 
+                    alt="Profile Picture" 
+                    class="about-pic"
+                />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                            src="./assets/experience.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>2+ Years <br />Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                            src="./assets/education.png" 
+                            alt="Experience Icon"
+                            class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque dolore repellat corrupti nobis necessitatibus autem ad voluptatibus architecto voluptate deleniti adipisci fuga nulla cum nisi iste nemo id facere, laudantium veritatis eveniet. Quae, sequi. Fugiat, cum ut cupiditate iusto ex neque laudantium provident quaerat officia quae. Voluptas nulla iusto corporis!</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow Icon" class="icon arrow"
+        onclick="location.href='./experience'">
+    </section>
+    
+
+    <!-- <div>
         <p>Hello, my name is</p>
         <h1>Darius Lewis</h1>
         <h3>Software Engineering Student at LSU</h3>
         <p>A passionate and driven software engineering student with a keen interest in becoming a web developer.</p>
-
     </div>
     <div>
         <p>As a senior computer science major, I am passionate about crafting elegant solutions to complex problems. Being proficient in front-end languages like HTML, CSS, and Javascript and back-end languages like Java and C++, enabled me to sharpen my skills through hands-on projects and collaborative coursework. My journey has inspired a deep appreciation for both theoretical foundations and practical applications. Beyond the classroom, I have sought out internships and hands-on experiences to apply theoretical knowledge to real-world scenarios. My commitment to staying ahead of the latest industry trends, combined with a dedication to continuous learning, positions me as an adaptable and forward-thinking computer scientist. Possessing a sharp attention to detail and a gift of algorithmic thinking, I am excited to contribute innovative perspectives to the dynamic world of computer science..</p>
-    </div>
-
+    </div> 
+-->
+<!--  
     <h1>About Me</h1>
     <h1>About Me</h1>
     <h1>Some Things I've Built</h1>
     <h1>About Me</h1>
-    <button>Resume</button>
+    <button>Resume</button> 
+-->
     
 </body>
 </html>
