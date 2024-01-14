@@ -216,6 +216,12 @@ section {
   height: 80vh;
 }
 
+#profile-pic {
+  border: 2px solid;
+  border-color: var(--secondary-color);
+  border-radius: 50%;
+}
+
 .section__pic-container {
   display: flex;
   height: 400px;
@@ -335,6 +341,9 @@ section {
 
 .about-pic {
   border-radius: 2rem;
+  border: 2px solid;
+  border-color: var(--secondary-color);
+  width: auto;
 }
 
 .arrow {
@@ -395,7 +404,7 @@ section {
 article {
   display: flex;
   width: 10rem;
-  justify-content: space-around;
+  justify-content: flex-start;
   gap: 0.5rem;
 }
 
